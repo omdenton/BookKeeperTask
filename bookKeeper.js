@@ -1,15 +1,14 @@
 function book(title,authour,pages,read) {
-this.title = title;
-this.authour =authour;
-this.pages = pages;
-this.read = read;
+  this.title = title;
+  this.authour =authour;
+  this.pages = pages;
+  this.read = read;
+  this.info = function() {
+    return Object.values(theHobbit); 
+    };
 
-book.info = function() {
-  var info = book.values;
-  return info;
-
-};
 
 }
 
-book("The Hobbit", "JRR Tolken", 295, false);
+const theHobbit = new book("The Hobbit", "JRR Tolken", 295, false);
+console.log(theHobbit.info());
